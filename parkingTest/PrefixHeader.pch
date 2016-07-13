@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  parkingTest
+//
+//  Created by zhanghangzhen on 15/12/29.
+//  Copyright © 2015年 zhanghangzhen. All rights reserved.
+//
+
+ 
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+
+
+// 随机色
+#define HMRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+// 是否为iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+// 导航栏标题的字体
+#define HMNavigationTitleFont [UIFont boldSystemFontOfSize:20]
+
+#endif
+ /* PrefixHeader_pch */

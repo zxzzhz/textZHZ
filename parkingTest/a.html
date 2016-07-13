@@ -1,0 +1,32 @@
+<html>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <script type="text/javaScript">
+            
+            function hello(msg)
+            {
+                document.getElementById("txt").value = msg;//"调用成功了！";
+                alert("测试成功了");
+                document.getElementById("txt").value = msg;//"调用成功了！";
+                alert("干嘛的");
+
+                
+                
+            }
+        
+        function callOcfunction()
+        {
+           var uri = "jsaction://127.0.0.1#javascript传递了参数";
+           // var uri="http://www.baidu.com";
+            window.location = uri;
+            
+        }
+        
+            </script>
+        <body>
+            <br>
+            我们正在测试紧oc调用js代码
+            <p><input type="text" id="txt" value="测试..."></p>
+                <button  onclick="callOcfunction()">测试js调用oc</button>
+                </body>
+        
+</html>
